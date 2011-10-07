@@ -183,7 +183,9 @@ endfunction
 function Jumpto(line)
 	call cursor(a:line,1)
 	let l:i = 1
-	while l:i < 100
+    " this loop is disabled, since it seems to give an error if the cursor
+    " is not on a fold.
+	while l:i < 1
 		normal zo
 		let l:i = l:i + 1
 	endwhile
