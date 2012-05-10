@@ -33,11 +33,11 @@ function GenerateLatexMenu()
 
  
 
- let l:exprP = '.*\c\\part{'
- let l:exprC = '.*\c\\chapter{'
- let l:exprS = '.*\c\\section{'
- let l:exprSS = '.*\c\\subsection{'
- let l:exprSSS = '.*\c\\subsubsection{'
+ let l:exprP = '^[^%]*\c\\part{'
+ let l:exprC = '^[^%]*\c\\chapter{'
+ let l:exprS = '^[^%]*\c\\section{'
+ let l:exprSS = '^[^%]*\c\\subsection{'
+ let l:exprSSS = '^[^%]*\c\\subsubsection{'
  let l:exprAa = '\cbegin{appendix}'
  let l:exprAb =  '\c\\appendix'
  let l:chapcount = 1
